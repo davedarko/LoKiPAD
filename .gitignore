@@ -13,6 +13,7 @@ _autosave-*
 *-save.pro
 *-save.kicad_pcb
 fp-info-cache
+*-backups
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -24,3 +25,12 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+# exclude Arduino subfolder
+arduino
+
+# exclude 3d files subfolder
+3d files
+
+# exclude 3d files subfolder
+reference
