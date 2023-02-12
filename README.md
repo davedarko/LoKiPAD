@@ -9,7 +9,7 @@ a low cost adafruit macropad clone with integrated todbot MacroPadSynthPlug.
 #define OLED_RST 15
 #define OLED_CS  22
 
-Chose the Adafruit MacroPad RP2040 to compile the Arduino examples from todbot, mainl so the SPI pins check out. For pinout ou have to (re)define some pins, so the oled works. 
+Chose the Adafruit MacroPad RP2040 to compile the Arduino examples from todbot, mainl so the SPI pins check out. For pinout ou have to (re)define some pins, so the oled works. There might be an issue with the encoder, if it feels backwards, just swap the PIN_ROTA and PIN_ROTB definition.
 
 ```c
 #define PIN_NEOPIXEL 19
