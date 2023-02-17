@@ -1,10 +1,10 @@
 # LoKiPAD
-A low cost adafruit macropad clone with integrated todbot [MacroPadSynthPlug!](https://github.com/todbot/macropadsynthplug) Partslist is kept minimal and some things were dropped. Generic 12mm SMD buttons, 3535 WS2812B LEDs, an OLED module and a Raspberry PI Pico. Check the ibom file for more info. There's a small hack necessary so you don't have to remove the PCB from the case to push the BOOTSEL button. 
+A low cost adafruit [macropad](https://learn.adafruit.com/adafruit-macropad-rp2040/) clone with integrated todbot [MacroPadSynthPlug!](https://github.com/todbot/macropadsynthplug) Partslist is kept minimal and some things like the SD-card adapter, debug LED and speaker were dropped. Generic 12mm SMD buttons, 3535 WS2812B LEDs, an OLED module and a Raspberry PI Pico keep the price low. Check the ibom file for more info on the resistor and capacitor values. There's a small hack necessary so you don't have to remove the PCB from the case to push the BOOTSEL button - connect the pad with a jumper wire to a pin of the pico bootsel button.
 
 ## Code
-Chose the Adafruit MacroPad RP2040 to compile the Arduino examples from todbot, mainl so the SPI pins check out. For pinout ou have to (re)define some pins, so the oled works. There might be an issue with the encoder, if it feels backwards, just swap the PIN_ROTA and PIN_ROTB definition.
+Chose the Adafruit MacroPad RP2040 to compile the Arduino examples from todbot, so the SPI pins for the display are setup correctly. You also have to (re)define some pins to make the oled display and the LEDs work. There might be an issue with the encoder - if it feels backwards, just swap the PIN_ROTA and PIN_ROTB definition.
 
-I haven't really done much, just because I saw Todbots code and that was also the reason why I made this.
+Since this is hardware to run todbots code, there's no code of my own to find here.
 
 ```c
 #define PIN_NEOPIXEL 19
