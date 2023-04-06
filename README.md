@@ -14,7 +14,8 @@ Since this is hardware to run todbots code, there's no code of my own to find he
 #define OLED_RST 15
 #define OLED_CS  22
 ```
-
+## code of other people
+This [MIDI controller code](https://gist.github.com/codeandmake/a2a5672fd49b748823cb352ba72d804a) by @codeandmake works great too, once you've changed the pin definition. 
 ---
 
 ![Picture of a 12 button macropad with an OLED and a encoder knob](/assets/LoKiPAD.jpg)
