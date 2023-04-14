@@ -66,7 +66,7 @@ module usbSocket() {
 	translate([-usb/2,d/2-usb/2,-usb+th-h])
 	cube(usb);
 	
-	usb2 = 22;
+	usb2 = 32;
 	color("red", 0.2)
 	translate([-usb2/2,d/2-usb2+o,-usb2+th-h])
 	cube(usb2);
